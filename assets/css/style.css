@@ -1,0 +1,1962 @@
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Standarts */
+
+.flex {
+  display: flex;
+}
+
+.flex.row {
+  flex-direction: row;
+}
+
+div.wrapper {
+    width: 80vw;
+    margin: auto;
+}
+
+
+/* navigation */
+
+#site-nav {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  background: #314852;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+#site-nav ul li {
+  display: inline;
+  border-right: solid 1px white;
+  padding: 0 10px 0 5px;
+  transition: all 0.3s ease;
+}
+
+#site-nav ul li:hover {
+ opacity: 0.5;
+}
+
+#site-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#logo-nav {
+  width: 4%;
+  cursor: pointer;
+}
+
+.globe, .search {
+  margin-right: 5px;
+}
+
+.dropdown {
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 10px;
+  background-color: rgba(255, 0, 0, 0);
+  font-weight: 700;
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0.5;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* SOCIAL SIDE BAR*/
+
+#social-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  width: 50px;
+  height: 18%;
+  background-color: #192730;
+  z-index: 99;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+#social-bar:hover {
+  opacity: 1;
+}
+
+.whitecircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 5px 0 5px 0;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #243440;
+  transition: all 0.3s ease;
+}
+
+#social-bar a {
+  text-decoration: none;
+  font-size: 20px;
+  margin: 10%;
+  border-radius: 50%;
+  color: #f3f1f0;
+}
+
+.whitecircle:hover {
+  opacity: 0.8;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  height: 35vh;
+  background-color: #192730;
+  position: relative;
+}
+
+.footer-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #f3f1f0;
+  width: 50%;
+  height: 35vh;
+  margin: 0 10% 0 10%;
+}
+
+.footer-text-wrapper p {
+  margin-top: 5%;
+}
+
+.footer-social-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.footer-social-wrapper a {
+  margin: 3%;
+  font-size: 40px;
+  text-decoration: none;
+  color: #f3f1f0;
+  transition: all 0.3s ease;
+}
+
+.footer-social-wrapper a:hover {
+  opacity: 0.50;
+}
+
+/* FORSIDE - slideshow */
+
+#slideshow {
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+#contentwrapper {
+  width: 300vw;
+  transform: translate3d(0,0, 0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.content {
+  float: left;
+  width: 100vw;
+  height: 90vh;
+  white-space: normal;
+  background-repeat: no-repeat;
+}
+
+#itemOne {
+    background-color: #ADFF2F;
+    background: url("http://fred.wf/e-sport/assets/img/gaming.png") center center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#itemTwo {
+    background-color: #FF7F50;
+    background: url(../img/AAULAN.png) ;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+#itemThree {
+    background-color: #1E90FF;
+    background: url(../img/teamwork.png) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#navLinks {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+}
+
+#navLinks ul {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 6px;
+}
+
+#navLinks ul li {
+  height: 5px;
+  width: 5px;
+  margin: 10px;
+  list-style: none;
+  cursor: pointer;
+  background-color: #CCCCCC;
+  padding: 5px;
+  border-radius: 45px;
+}
+
+#navLinks ul li:hover {
+  background-color: white;
+}
+
+#navLinks ul li.active {
+  background-color: #333333;
+  color: #FFFFFF;
+  outline-width: 7px;
+}
+
+#navLinks ul li.active:hover {
+  background-color: #484848;
+  color: #FFFFFF;
+}
+
+#itemOne::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #2c3e50;
+  background: -webkit-linear-gradient(to bottom, #486c75, #2c3e50);
+  background: linear-gradient(to bottom, #486c75, #2c3e50);
+  opacity: .7;
+}
+
+#itemTwo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #2c3e50;
+  background: -webkit-linear-gradient(to bottom, #243B55, #141E30);
+  background: linear-gradient(to bottom, #243B55, #141E30);
+  opacity: .7;
+}
+
+#itemThree::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #2c3e50;
+  background: -webkit-linear-gradient(to bottom, #2c3e50, #486c75);
+  background: linear-gradient(to bottom, #2c3e50, #486c75);
+  opacity: .7;
+}
+
+ .slogan {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+  z-index: 1;
+}
+
+ .slogan h1:first-child {
+  background-color: rgba(5, 64, 95, .5);
+  color: white;
+  font-size: 3.4vw;
+  margin: 0;
+  width: 20vw;
+  padding: 5px 10px 0 10px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+
+.innerathlete {
+  background-color: rgba(5, 64, 95, .5);
+  color: white;
+  font-size: 2.5vw;
+  margin: 0;
+  padding: 10px;
+  font-family: 'Work Sans', sans-serif;
+
+}
+
+.slogan button {
+  width: 150px;
+  height: 50px;
+  border-radius: 40px;
+  font-weight: 700;
+  font-family: 'Work Sans', sans-serif;
+  border: 1px solid #fff;
+  color: white;
+  cursor: pointer;
+  margin-top: 5%;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  background-color: Transparent;
+}
+
+.learn-more:hover {
+  background-color: #243440;
+}
+
+.knapholder {
+  position: absolute;
+  bottom: 0;
+  height: 20vh;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.cirkel {
+  width: 46px;
+  height: 46px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.cirkel:hover {
+  opacity: 0.5;
+  transform: scale(0.95);
+}
+
+.cirkel span {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+.cirkel::before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-animation: sdb03 3s infinite;
+  animation: sdb03 3s infinite;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 40px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 40px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/* FORSIDE - About E-sportcenter section  */
+
+h2 {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+p {
+  line-height: 1.73;
+  color: #f3f1f0;
+  margin: 0;
+}
+
+#about_esportcenter {
+  display: flex;
+  position: relative;
+  background-color: #243440;
+  height: 50vh;
+  width: 100%;
+  font-size: 1vw;
+    box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+#about_esportcenter h2 {
+    text-align: left;
+}
+
+.about-esportcenter-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3% 5% 3% 10%;
+}
+
+
+.about-esportcenter-heading {
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+.sep {
+  position: relative;
+  margin:10px 0 20px 0;
+  border-top: solid 1px;
+  color: #405d72;
+  width: 100%;
+}
+
+
+.about-esportcenter-video {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  padding: 3% 10% 3% 5%;
+}
+
+iframe {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* FORSIDE - Bootcamp + medlemskab */
+
+.esport-offers {
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.bootcamp {
+  height: 50vh;
+  background: #486c75;
+}
+
+.bootcamp-text {
+  display: flex;
+  order: 2;
+  width: 50%;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0% 10% 0% 5%;
+  box-sizing: border-box;
+  font-size: 1vw;
+}
+
+.section-button {
+  width: 120px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: white;
+  border: 1px solid #fff;
+  color: white;
+  cursor: pointer;
+  margin-top: 5%;
+  font-size: 1vw;
+  transition: all 0.3s ease;
+  background-color: Transparent;
+  outline: none;
+  cursor: pointer;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 20px;
+}
+
+.section-button:hover {
+  background-color:#192730;
+}
+
+.bootcamp-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: 1;
+  width: 50%;
+  margin: 0% 5% 0% 10%;
+  box-sizing: border-box;
+}
+
+#bootcamppic {
+  height: auto;
+  width: 70%;
+}
+
+.membership {
+  height: 50vh;
+  background-color: #243440;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 1);
+  z-index: 50;
+}
+
+.membership-text {
+  display: flex;
+  width: 50%;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0% 5% 0% 10%;
+  box-sizing: border-box;
+  font-size: 1vw;
+}
+
+#membershippic {
+  height: 75%;
+  width: 75%;
+}
+
+/* FORSIDE - Faciliteter section */
+
+.polygon-wrapper {
+  height: 100vh;
+  width: 100%;
+}
+
+.polygon-right-faciliteter {
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  width: 55.6%;
+  shape-outside: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+  background-color: #243440;
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+  transform: scaleZ(1.0001);
+  z-index: 20;
+}
+
+.polygon-left-faciliteter {
+  position: absolute;
+  height: 100vh;
+  width: 55.6%;
+  shape-outside: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+  background: url('http://fred.wf/e-sport/assets/img/keyboard.png') center center no-repeat;
+  background-size: cover;
+  transform: scaleZ(1.0001);
+}
+
+.polygon-left-faciliteter::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #2c3e50;
+  background: -webkit-linear-gradient(to bottom, #486c75, #2c3e50);
+  background: linear-gradient(to bottom, #486c75, #2c3e50);
+  opacity: .7;
+}
+
+.text-box-polygon {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 10vw 0 18.6vw;
+  box-sizing: border-box;
+  color: #f3f1f0;
+  font-size: 1vw;
+}
+
+/* FORSIDE - About arrangør section */
+
+.polygon-right-arrangør {
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  width: 55.6%;
+  shape-outside: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+  transform: scaleZ(1.0001);
+  background: url('../img/arrangør.png') center center no-repeat;
+  background-size: cover;
+}
+
+.polygon-left-arrangør {
+  position: absolute;
+  height: 100vh;
+  width: 55.6%;
+  background-color: #243440;
+  -webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+  transform: scaleZ(1.0001);
+}
+
+.polygon-right-arrangør::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #2c3e50;
+  background: -webkit-linear-gradient(to bottom, #486c75, #2c3e50);
+  background: linear-gradient(to bottom, #486c75, #2c3e50);
+  opacity: .7;
+}
+
+.text-box-polygon-arrangør {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 18.6vw 0 10vw;
+  box-sizing: border-box;
+  color: #f3f1f0;
+  font-size: 1vw;
+}
+
+/* FORSIDE - Vores spil section*/
+
+.vores-spil {
+  display: flex;
+  flex-direction: column;
+  background: #2c3e50;
+  background: -webkit-linear-gradient(to bottom, #486c75, #2c3e50);
+  background: linear-gradient(to bottom, #486c75, #2c3e50);
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 3% 10% 3% 10%;
+}
+
+.spil-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.spil {
+  height: 425px;
+  width: 285px;
+  background-color: white;
+  box-shadow: 0 15px 12px rgba(0,0,0,0.12);
+  margin: 3% 0 3% 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.spil:hover {
+  opacity: 0.75;
+  transform: scale(0.9);
+}
+
+
+
+/* -----------E-SPORTS UNDERSIDER - BOOKNING---------- */
+
+.pakkehelper{
+  display:flex;
+}
+
+.pakkeholder {
+  color: white;
+  background-color: #243440;
+  height: 450px;
+  width: 300px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.pakkenavn {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+/* -----------E-SPORTS UNDERSIDER - ARRANGØR----------- */
+
+.for_arrangoerer {
+  height: 70vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+header div.slogan_for_arrangoerer {
+  display: flex;
+  height: 70vh;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+}
+
+.event-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/AAULAN.png) center center no-repeat;
+  background-size: cover;
+  z-index: -1;
+  position: absolute;
+}
+
+.event-img::before {
+  content: '';
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+opacity: .7;
+}
+
+.for_arrangoerer h1.top {
+  background-color: rgba(5, 64, 95, .5);
+  color: white;
+  font-size: 50px;
+  margin: 0;
+  width: 450px;
+  padding: 10px;
+  font-family: 'Work Sans', sans-serif;
+  z-index: 10;
+}
+
+.for_arrangoerer h1.bottom {
+  background-color: rgba(5, 64, 95, .5);
+  color: white;
+  font-size: 50px;
+  margin: 0;
+  width: 690px;
+  padding: 10px;
+  font-family: 'Work Sans', sans-serif;
+  z-index: 10;
+}
+
+section.plads_til_over {
+  height: 50vh;
+  width: 100%;
+  background: #243440;
+  position: relative;
+}
+section.internet {
+  height: 50vh;
+  width: 100%;
+  background: #243440;
+  position: relative;
+}
+
+section.lige_ved_stationen {
+  height: 50vh;
+  width: 100%;
+  background: #486c75;
+  position: relative;
+}
+
+.polygon-left {
+  position: absolute;
+  left: 0;
+  height: 50vh;
+  width: 55.6%;
+  background: #fff;
+  background: url(../img/sportshal.png);
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+}
+
+.polygon-left::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #2c3e50;
+    background: -webkit-linear-gradient(to bottom, #486c75, #2c3e50);
+    background: linear-gradient(to bottom, #486c75, #2c3e50);
+    opacity: .5;
+}
+
+.polygon-right {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 0;
+  height: 50vh;
+  width: 55.6%;
+  background: #243440;
+  -webkit-clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.plads_til_over_tekst {
+  text-align: left;
+  line-height: 1.73;
+  margin: 0 10% 0 25%;
+  color: white;
+
+}
+
+.polygon-right-ligevedstationen {
+  position: absolute;
+  right: 0;
+  height: 50vh;
+  width: 55.6%;
+  background: url(../img/kort.png);
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
+clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
+}
+
+.polygon-right-ligevedstationen::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #2c3e50;
+    background: -webkit-linear-gradient(to bottom, #486c75, #2c3e50);
+    background: linear-gradient(to bottom, #486c75, #2c3e50);
+    opacity: .5;
+}
+
+.polygon-left-ligevedstationen {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 0;
+  height: 50vh;
+  width: 55.6%;
+  background: #486c75;
+  -webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+}
+
+.ligevedstationen-tekst {
+  text-align: left;
+  line-height: 1.73;
+  margin: 0 25% 0% 10%;
+  color: white;
+}
+
+.polygon-left-internet {
+  position: absolute;
+  left: 0;
+  height: 50vh;
+  width: 55.6%;
+  background: #fff;
+  background: url(../img/fiber-optic.png);
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+}
+
+.polygon-left-internet::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #2c3e50;
+    background: -webkit-linear-gradient(to bottom, #486c75, #2c3e50);
+    background: linear-gradient(to bottom, #486c75, #2c3e50);
+    opacity: .5;
+}
+
+.polygon-right-internet {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 0;
+  height: 50vh;
+  width: 55.6%;
+  background: #243440;
+  -webkit-clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.internet_tekst {
+  text-align: left;
+  line-height: 1.73;
+  margin: 0% 10% 0% 25%;
+  color: white;
+}
+
+.planlag-event {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+  background: #2c3e50;
+  background: -webkit-linear-gradient(to bottom, #486c75, #2c3e50);
+  background: linear-gradient(to bottom, #486c75, #2c3e50);
+}
+
+.planlag-event h2 {
+  color: white;
+  font-size: 2vw;
+}
+
+::placeholder {
+  color: white;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 3% 10% 3% 10%;
+}
+
+input {
+
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.875em;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+
+  background: rgb(36, 52, 64);
+  outline: none;
+  color: white;
+
+  border: solid 1px white;
+  border-bottom: none;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background-color: rgba(36, 52, 64,0.7);
+}
+
+textarea {
+  font-family: 'Work Sans', sans-serif;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+
+  background: rgb(36, 52, 64);
+  outline: none;
+
+  color: white;
+  font-size: 0.875em;
+
+  border: solid 1px white;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+background-color: rgba(36, 52, 64,0.7);
+}
+
+#submit {
+
+
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.875em;
+  color: white;
+
+  outline:none;
+  cursor: pointer;
+
+  border: solid 1px white;
+  border-top: none;
+}
+
+#submit:hover {
+  background-color: rgba(5, 64, 95, 0.5);
+}
+
+
+/* -----------E-SPORTS UNDERSIDER - KONTAKT OS----------- */
+
+.kontakt-os {
+  height: 90vh;
+}
+
+.polygon-right-kontakt {
+  position: absolute;
+  right: 0;
+  height: 90vh;
+  width: 55.6%;
+  background: #243440;
+  -webkit-clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.polygon-left-kontakt {
+  position: absolute;
+  left: 0;
+  height: 90vh;
+  width: 55.6%;
+  background: #486c75;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+  background: -webkit-linear-gradient(to bottom, #486c75, #2c3e50);
+  background: linear-gradient(to bottom, #486c75, #2c3e50);
+  color: white;
+}
+
+.polygon-left-kontakt div {
+  padding-top: 5%;
+}
+
+.kontakt-tekst {
+  margin: 10% 0 0 20%;
+}
+
+.right-padding {
+  padding: 20% 10% 0% 20%;
+  color: white;
+}
+
+.right-padding h2,
+.right-padding p {
+  padding: 0 20% 0 10%;
+}
+
+/* bottom */
+
+/* -----------E-SPORTS UNDERSIDER - VORES SERVICES----------- */
+
+#header-vores_services {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url(../img/center.png) center no-repeat;
+  background-size: cover;
+}
+
+
+#header-vores_services::before {
+  content: '';
+  height: 80vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  opacity: .7;
+}
+
+#herofont-services {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+}
+
+#herofont-top {
+  background-color: rgba(5, 64, 95, .5);
+  color: white;
+  width: 27%;
+  font-size: 2.5vw;
+  margin: 0% 10% 0% 10%;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#herofont-bottom {
+  background-color: rgba(5, 64, 95, .5);
+  color: white;
+  width: 22%;
+  font-size: 2.5vw;
+  margin: 0% 10% 0% 10%;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.vores-services-sections {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+
+#picture {
+  position: relative;
+  height: 100vh;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+#picture::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #243440;  /* fallback for old browsers */
+  opacity: .7;
+}
+
+#bootcamp {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #243440;
+  color: white;
+  padding: 3% 10% 3% 10%;
+  box-sizing: border-box;
+}
+
+.bootcamp-pics {
+ flex: 1;
+ max-width: 100%;
+ max-height: 33.33vh;
+ object-fit: cover;
+}
+
+.vores-services-sections1 {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+}
+
+
+#medlemskab {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #486c75;
+  color: white;
+  padding: 3% 10% 3% 10%;
+  box-sizing: border-box;
+}
+
+#medlemskab-picture {
+  position: relative;
+  height: 75vh;
+  width: 40%;
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+}
+
+.medlemskab-pics {
+ max-width: 100%;
+ max-height: 75vh;
+}
+
+.vores-services-sections2 {
+  display: flex;
+  height: 40vh;
+  width: 100%;
+  background-color: green;
+}
+
+#dropin-picture {
+  height: 40vh;
+  width: 40%;
+  background-color: blue;
+    position: relative;
+}
+
+#drop-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 10% 3% 10%;
+  box-sizing: border-box;
+  height: 40vh;
+  width: 60%;
+  background-color: #243440;
+  color: white;
+}
+
+.dropin-pics {
+  max-width: 100%;;
+  object-fit: cover;
+}
+
+#dropin-picture:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #243440;  /* fallback for old browsers */
+  opacity: .7;
+}
+
+/* BOOKINGSIDE -- */
+
+#header-booking {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #486c75, #2c3e50);
+  background: linear-gradient(to bottom, #486c75, #2c3e50);
+}
+
+#pakker {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.pakke {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 425px;
+  width: 285px;
+  background-color: white;
+  margin: 2%;
+  box-shadow: 0 15px 12px rgba(0,0,0,0.12);
+  transition: all 0.3s ease;
+  background-image: url("../img/standardpakke1.png");
+}
+
+.pakke:hover {
+  transform: scale(0.97);
+  background-image: url("../img/standardpakke2.png");
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+#price-overview {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3% 0 3% 0;
+}
+
+.personer {
+  border: solid 1px white;
+  background: rgb(36, 52, 64);
+  outline: none;
+  color: white;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.dage {
+border: solid 1px white;
+  background: rgb(36, 52, 64);
+  outline: none;
+  color: white;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.mad {
+  border: solid 1px white;
+  background: rgb(36, 52, 64);
+  outline: none;
+  color: white;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#book-now {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  margin: 3% 0 3% 0;
+
+}
+
+/* GOLFCENTER -- BARE DUMMY FORSIDE */
+
+#itemOnegolf {
+    background-color: #52c234;
+    background: url("../img/golf.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#itemOnegolf::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #52c234;
+  background: -webkit-linear-gradient(to bottom, #52c234, #061700);
+  background: linear-gradient(to bottom, #52c234, #061700);
+  opacity: .7;
+}
+
+.polygon-rightgolf {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 0;
+  height: 50vh;
+  width: 55.6%;
+  background: #062300;
+  -webkit-clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+
+.polygon-leftgolf {
+  position: absolute;
+  left: 0;
+  height: 50vh;
+  width: 55.6%;
+  background: #fff;
+  background: url(../img/sportshal.png);
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+}
+
+.polygon-leftgolf::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #52c234;
+    background: -webkit-linear-gradient(to bottom, #062400, #061700);
+    background: linear-gradient(to bottom, #062400, #061700);
+    opacity: .5;
+}
+
+.golf {
+  display: flex;
+  height: 35vh;
+  background-color: #062400;
+  position: relative;
+}
+
+/* FITNESSCENTER -- BARE DUMMY FORSIDE */
+
+#itemOnefitness {
+    background-color: #EF3B36;
+    background: url("../img/fitness.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#itemOnefitness::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #EF3B36;
+  background: -webkit-linear-gradient(to bottom, #EF3B36, #FFFFFF);
+  background: linear-gradient(to bottom, #EF3B36, #FFFFFF);
+  opacity: .7;
+}
+
+.polygon-rightfitness {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 0;
+  height: 50vh;
+  width: 55.6%;
+  background: #c9302c;
+  -webkit-clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+
+.polygon-leftfitness {
+  position: absolute;
+  left: 0;
+  height: 50vh;
+  width: 55.6%;
+  background: #fff;
+  background: url(../img/sportshal.png);
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+}
+
+.polygon-leftfitness::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #c9302c;
+    background: -webkit-linear-gradient(to bottom, #c9302c, #FFFFFF);
+    background: linear-gradient(to bottom, #c9302c, #FFFFFF);
+    opacity: .5;
+}
+
+.fitness {
+  display: flex;
+  height: 35vh;
+  background-color: #c9302c;
+  position: relative;
+}
+
+/* SPORTSCENTER -- BARE DUMMY FORSIDE */
+
+#itemOnesports {
+    background-color: #ED8F03;
+    background: url("../img/fitness.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#itemOnesports::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #ED8F03;
+  background: -webkit-linear-gradient(to bottom, #ED8F03, #FFB75E);
+  background: linear-gradient(to bottom, #ED8F03, #FFB75E);
+  opacity: .7;
+}
+
+.polygon-rightsports {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 0;
+  height: 50vh;
+  width: 55.6%;
+  background: #ED8F03;
+  -webkit-clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+
+.polygon-leftsports {
+  position: absolute;
+  left: 0;
+  height: 50vh;
+  width: 55.6%;
+  background: #fff;
+  background: url(../img/sportshal.png);
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+}
+
+.polygon-leftsports::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #c9302c;
+    background: -webkit-linear-gradient(to bottom, #ED8F03, #FFB75E);
+    background: linear-gradient(to bottom, #ED8F03, #FFB75E);
+    opacity: .5;
+}
+
+.sports {
+  display: flex;
+  height: 35vh;
+  background-color: #ED8F03;
+  position: relative;
+}
+
+/* SPORTSCENTER -- Forside */
+
+
+#slideshow-forside {
+  margin-top: 3%;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+
+#contentwrapper {
+  width: 300vw;
+  transform: translate3d(0,0, 0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.content-forside {
+  float: left;
+  width: 100vw;
+  height: 50vh;
+  white-space: normal;
+  background-repeat: no-repeat;
+}
+
+#itemOne {
+    background-color: #ADFF2F;
+    background: url("http://fred.wf/e-sport/assets/img/gaming.png") center center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#itemTwo {
+    background-color: #FF7F50;
+    background: url(../img/AAULAN.png) ;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+#itemThree {
+    background-color: #1E90FF;
+    background: url(../img/teamwork.png) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#navLinks {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+}
+
+#navLinks ul {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 6px;
+}
+
+#navLinks ul li {
+  height: 5px;
+  width: 5px;
+  margin: 10px;
+  list-style: none;
+  cursor: pointer;
+  background-color: #CCCCCC;
+  padding: 5px;
+  border-radius: 45px;
+}
+
+#navLinks ul li:hover {
+  background-color: white;
+}
+
+#navLinks ul li.active {
+  background-color: #333333;
+  color: #FFFFFF;
+  outline-width: 7px;
+}
+
+#navLinks ul li.active:hover {
+  background-color: #484848;
+  color: #FFFFFF;
+}
+
+#itemOne::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #2c3e50;
+  background: -webkit-linear-gradient(to bottom, #486c75, #2c3e50);
+  background: linear-gradient(to bottom, #486c75, #2c3e50);
+  opacity: .7;
+}
+
+#itemTwo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #2c3e50;
+  background: -webkit-linear-gradient(to bottom, #243B55, #141E30);
+  background: linear-gradient(to bottom, #243B55, #141E30);
+  opacity: .7;
+}
+
+#itemThree::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #2c3e50;
+  background: -webkit-linear-gradient(to bottom, #2c3e50, #486c75);
+  background: linear-gradient(to bottom, #2c3e50, #486c75);
+  opacity: .7;
+}
+
+#main-info-forside {
+  display: flex;
+  flex-flow: wrap;
+  width: 100%;
+}
+
+.infobox {
+    background: #1966ad;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 2% 2% 2% 2%;
+    background: #1966ad;
+    margin: 3% 0 3% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: solid 3px white;
+}
+
+
+.blok {
+    font-size:24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sportspark_nyheder {
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    padding: 3% 0 3% 0;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+.big-news-pic {
+  height: 100%;
+  width: 70%;
+  background-color: #595959;
+  border-right: solid 3px white;
+}
+
+.andet-wrapper {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.andet {
+  height: 33.33%;
+  width: 100%;
+  background-color: #333333;
+  border-bottom: solid 3px white;
+}
+
+.sportspark_info {
+    padding: 3% 0 3% 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px black;
+}
+
+.infopics {
+  display: flex;
+  flex-direction: column;
+  border-right: solid 3px white;
+  background-color: #e6e6e6;
+}
+
+.pics-forside {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.infopics p {
+  margin: 0 20px 20px 20px;
+}
+
+.infopics h2 {
+  margin: 30px 20px 10px 20px;
+}
+
+.instagram {
+    display: flex;
+    height: 20vh;
+    width: 100%;
+    color: #292929;
+    padding: 3% 0 3% 0;
+    border-bottom: solid 1px black;
+}
+
+.instapic {
+  flex: 1;
+  max-width: 16.66%;
+  border-right: solid 3px white;
+}
+
+#sponsorer {
+    padding: 3% 0 3% 0;
+    height: 50vh;
+    width: 100%;
+    color: #292929;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  height: 25vh;
+}
+
+.wrap img {
+ max-width: 20%;
+}
+
+#forside1 {
+    background-color: #ADFF2F;
+    background: url("../img/svømme.jpg") center center no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#forside2  {
+    background-color: #FF7F50;
+    background: url(../img/fodbold.jpg) ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+#forside3  {
+    background-color: #1E90FF;
+    background: url(../img/controller.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+#site-nav.sportspark{
+background: white;
+}
+
+#site-nav.sportspark ul li {
+border-color: #292929;
+}
+#site-nav.sportspark ul li a{
+  color: #292929;
+}
+
+#site-nav.sportspark .dropdown .dropbtn {
+    color: black;
+}
