@@ -1960,3 +1960,59 @@ border-color: #292929;
 #site-nav.sportspark .dropdown .dropbtn {
     color: black;
 }
+
+.topnav .icon {
+  display: none;
+}
+
+.inbefore {
+  font-size: 2.5vw;
+}
+
+/* responsivness */
+@media only screen and (max-width: 768px) {
+  #about_esportcenter {
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+  }
+  .about-esportcenter-text {
+    font-size: 12px;
+    width: 80%;
+  }
+  .about-esportcenter-video {
+    width: 90%;
+    height: 200px;
+  }
+  nav button {
+    display: none;
+  }
+  #logo-nav {
+    width: 18%;
+  }
+  #social-bar {
+    display: none;
+  }
+  .innerathlete {
+    font-size: 20px;
+  }
+  .inbefore {
+    font-size: 25vw;
+  }
+  .slogan button {
+    display: none;
+  }
+  .slogan h1:first-child {
+    width: 65vw;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .example {background: orange;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .example {background: pink;}
+}

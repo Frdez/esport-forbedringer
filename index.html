@@ -19,21 +19,26 @@
 <body>
   <nav id="site-nav" class="flex row">
     <img onclick="window.location.href='assets/other_pages/sportspark.html'" id="logo-nav" src="assets/img/SPB.png" alt="logo-header">
-    <ul>
-      <li><a href="assets/other_pages/sportspark.html">FORSIDE</a></li>
-      <li><a href="assets/other_pages/sportscenter.html">SPORTSCENTER</a></li>
-      <li><a href="assets/other_pages/golfcenter.html">GOLFCENTER</a></li>
-      <li><a href="assets/other_pages/fitnesscenter.html">FITNESSCENTER</a></li>
-    </ul>
-    <div class="dropdown">
-      <button onclick="window.location.href='index.html'" class="dropbtn">E-SPORTCENTER</button>
-      <div class="dropdown-content">
-        <a href="assets/other_esportscenter_pages/bookning.html">Planlæg dit besøg</a>
-        <a href="assets/other_esportscenter_pages/for_arrangoer.html">For arrangører</a>
-        <a href="assets/other_esportscenter_pages/vores_services.html">Vores services</a>
-        <a href="assets/other_esportscenter_pages/kontakt_os.html">Kontakt os</a>
+      <div class="topnav flex" id="myTopnav">
+        <ul>
+          <li><a href="assets/other_pages/sportspark.html">FORSIDE</a></li>
+          <li><a href="assets/other_pages/sportscenter.html">SPORTSCENTER</a></li>
+          <li><a href="assets/other_pages/golfcenter.html">GOLFCENTER</a></li>
+          <li><a href="assets/other_pages/fitnesscenter.html">FITNESSCENTER</a></li>
+        </ul>
+        <div class="dropdown">
+          <button onclick="window.location.href='index.html'" class="dropbtn">E-SPORTCENTER</button>
+          <div class="dropdown-content">
+            <a href="assets/other_esportscenter_pages/bookning.html">Planlæg dit besøg</a>
+            <a href="assets/other_esportscenter_pages/for_arrangoer.html">For arrangører</a>
+            <a href="assets/other_esportscenter_pages/vores_services.html">Vores services</a>
+            <a href="assets/other_esportscenter_pages/kontakt_os.html">Kontakt os</a>
+          </div>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fas fa-bars"></i>
+        </a>
       </div>
-    </div>
       <button style="width: 100px; height: 40%; border-radius: 40px; margin-left: 20px; font-weight: 700; font-family: 'Work Sans', sans-serif; background-color: white; border: none; outline: none; cursor: pointer;" type="button" name="button"><i class="search fas fa-search"></i>SØG</button>
       <button style="width: 100px; height: 40%; border-radius: 40px; margin-left: 20px; font-weight: 700; font-family: 'Work Sans', sans-serif; background-color: white; border: none; outline: none; cursor: pointer;" type="button" name="button"><i class="globe fas fa-globe"></i>SPROG<img style="width: 15%;margin-left: 3px;" src="assets/img/arrow.png" alt="arrow"></button>
       <button class="bookingbtn" style="border-radius: 40px; margin-left: 20px; font-weight: 700; font-family: 'Work Sans', sans-serif; border: none; outline: none; cursor: pointer;background-color:#243440;color:white;width: 150px;height: 50%;" type="button" onclick="window.location.href='assets/other_esportscenter_pages/bookning.html'" name="button">BOOKING</button>
@@ -59,7 +64,7 @@
     <div id="contentwrapper">
         <div id="itemOne" class="content">
           <div class="slogan">
-            <h1>BE A HERO.</h1>
+            <h1 class="inbefore" style="font-size: 8vw;">BE A HERO.</h1>
             <h1 class="innerathlete">FIND YOUR INNER ATHLETE</h1>
             <button class="learn-more" style="width: 50%;" type="button" name="button" onclick="location.href='assets/other_esportscenter_pages/bookning.html';">BOOK YOUR TRIP TODAY</button>
           </div>
@@ -67,7 +72,7 @@
 
         <div id="itemTwo" class="content">
           <div class="slogan">
-            <h1 style="font-size: 2.5vw;">HOLD ET EVENT</h1>
+            <h1 class="inbefore" style="font-size: 8vw;">HOLD ET EVENT</h1>
             <h1 class="innerathlete">UDEN BEGRÆNSNINGER</h1>
             <button class="learn-more" type="button" name="button" onclick="location.href='assets/other_esportscenter_pages/for_arrangoer.html';">LÆR MERE</button>
           </div>
@@ -75,7 +80,7 @@
 
         <div id="itemThree" class="content">
           <div class="slogan">
-            <h1>BE A HERO.</h1>
+            <h1 style="font-size: 8vw;">BE A HERO.</h1>
             <h1 class="innerathlete">FIND YOUR INNER ATHLETE</h1>
             <button class="learn-more" type="button" name="button" onclick="location.href='assets/other_esportscenter_pages/booking1.html';">LÆR MERE</button>
           </div>
@@ -271,7 +276,7 @@
         changePosition(newLink);
       }
     </script>
-
+    <script src="assets/js/javascript.js"></script>
 
 </body>
 
