@@ -1319,7 +1319,7 @@ background-color: rgba(36, 52, 64,0.7);
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 90vh;
+  height: 130vh;
   width: 100%;
   background: #141E30;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #486c75, #2c3e50);
@@ -1451,10 +1451,24 @@ border: solid 1px white;
   font-family: 'Work Sans', sans-serif;
 }
 
-#book-now {
+
+.send-forespørgsel {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
+
+#forespørgsel-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 10% 0 3% 0;
+}
+
+
+
+
 
 /* GOLFCENTER -- BARE DUMMY FORSIDE */
 
